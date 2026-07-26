@@ -1,0 +1,400 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    min-height: 100%;
+}
+
+body {
+    min-height: 100vh;
+    font-family: Themysion, cursive;
+    background-color: #FAFAFA;
+}
+
+.pagina {
+    width: 100%;
+    min-height: 100vh;
+
+    background-color: #FAFAFA;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.navegacion {
+    border-bottom: 2px solid #0D0D0D;
+}
+
+.navegacion ul {
+    width: 100%;
+    min-height: 80px;
+    padding: 0 40px;
+    list-style: none;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+}
+
+.navegacion a {
+    color: #9F0712;
+    font-size: 22px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.navegacion a:hover {
+    text-decoration: underline;
+}
+
+main {
+    flex: 1;
+}
+
+.presentacion {
+    min-height: 55vh;
+    padding: 60px 20px;
+    text-align: center;
+    color: #FAFAFA;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background-image:
+        linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
+        url("../img/Logo TR.jpeg");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.presentacion h1,
+.presentacion p {
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
+}
+
+.presentacion h1 span {
+    display: block;
+}
+
+.presentacion p {
+    font-size: 29px;
+    line-height: 1.1;
+}
+
+.accesos {
+    width: calc(100% - 46px);
+    margin: 0 auto;
+    padding: 8px 0 28px;
+    border-top: 2px solid #0D0D0D;
+}
+
+.acceso {
+    min-height: 54px;
+    padding: 8px 4px;
+    color: #111111;
+    text-decoration: none;
+    border-bottom: 2px solid #0D0D0D;
+
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.icono {
+    width: 37px;
+    height: 37px;
+    flex-shrink: 0;
+
+    border: 2px solid #9F0712;
+    border-radius: 2px;
+    background-color: #FAFAFA;
+    font-size: 20px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flecha {
+    font-size: 25px;
+    line-height: 1;
+}
+
+.texto {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.acceso:hover {
+    background-color: #FAFAFA;
+}
+
+.pie-pagina {
+    min-height: 52px;
+    padding: 12px 18px;
+    background-color: #FAFAFA;
+    border-top: 2px solid #0D0D0D;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+.pie-pagina p {
+    font-size: 14px;
+}
+
+.redes-sociales {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.redes-sociales a {
+    color: #0D0D0D;
+    font-size: 19px;
+    text-decoration: none;
+}
+
+.redes-sociales a:hover {
+    transform: scale(1.15);
+}
+
+@media (max-width: 420px) {
+    body {
+        padding: 8px;
+    }
+
+    .navegacion ul {
+        overflow-x: auto;
+        justify-content: flex-start;
+    }
+
+    .presentacion h1 {
+        font-size: 34px;
+    }
+
+    .presentacion p {
+        font-size: 26px;
+    }
+
+    .texto {
+        font-size: 17px;
+    }
+    
+}
+.contenido-contacto {
+        background-image:
+        linear-gradient(rgba(255,255,255,0.7), rgba(255,255,255,0.7)),
+        url("../img/Roja.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: left;
+    width: min(100% - 40px, 1000px);
+    margin: 0 auto;
+    padding: 40px 0;
+}
+
+.contenido-contacto h1 {
+    margin-bottom: 25px;
+    font-size: 42px;
+}
+
+.formulario-contacto {
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 25px;
+    background-color: #FAFAFA;
+    border-radius: 12px;
+}
+
+.formulario-contacto h2 {
+    margin-bottom: 20px;
+    font-size: 28px;
+}
+
+.campo {
+    margin-bottom: 18px;
+}
+
+.campo label {
+    display: block;
+    margin-bottom: 7px;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.campo input,
+.campo textarea {
+    width: 100%;
+    padding: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    border: 2px solid #0D0D0D;
+    border-radius: 7px;
+    outline: none;
+}
+
+.campo textarea {
+    resize: vertical;
+}
+
+.campo input:focus,
+.campo textarea:focus {
+    border-color: #9F0712;
+}
+
+.formulario-contacto button {
+    display: block;
+    margin-left: auto;
+    padding: 11px 28px;
+    font-size: 17px;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #9F0712;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+.formulario-contacto button:hover {
+    background-color: #9F0712;
+}
+
+.datos-contacto {
+    margin-top: 35px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+}
+
+.informacion-contacto h2 {
+    margin-bottom: 15px;
+    font-size: 28px;
+}
+
+.informacion-contacto p {
+    margin-bottom: 12px;
+    font-size: 18px;
+}
+
+.informacion-contacto i {
+    width: 25px;
+}
+
+.mapa-contacto {
+    width: 220px;
+    min-height: 160px;
+    background-color: #FAFAFA;
+    border: 2px solid #555555;
+    border-radius: 8px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.mapa-contacto i {
+    font-size: 45px;
+}
+
+.redes-contacto {
+    margin-top: 30px;
+}
+
+.redes-contacto h2 {
+    margin-bottom: 15px;
+    font-size: 28px;
+}
+
+.iconos-redes {
+    display: flex;
+    gap: 15px;
+}
+
+.iconos-redes a {
+    width: 48px;
+    height: 48px;
+    color: #FAFAFA;
+    background-color: #9F0712;
+    border-radius: 9px;
+    font-size: 27px;
+    text-decoration: none;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.iconos-redes a:hover {
+    transform: scale(1.1);
+    background-color: #9F0712;
+}
+
+.navegacion a.activo {
+    padding-bottom: 8px;
+    border-bottom: 4px solid #0D0D0D;
+}
+.contenido-quienes {
+        background-image:
+        linear-gradient(rgba(255,255,255,0.7), rgba(255,255,255,0.7)),
+        url("../img/Roja.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+    width: min(100% - 60px, 1000px);
+    margin: 0 auto;
+    padding: 40px 0 70px;
+}
+
+.introduccion-quienes {
+    margin-bottom: 25px;
+}
+
+.introduccion-quienes h1 {
+    margin-bottom: 12px;
+    font-size: clamp(34px, 5vw, 48px);
+    line-height: 1.1;
+}
+
+.introduccion-quienes p {
+    max-width: 850px;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.historia {
+    margin-bottom: 30px;
+    padding: 25px 30px;
+    border-radius: 12px;
+}
+
+.valores h2 {
+    margin-bottom: 12px;
+    font-size: 32px;
+}
+
+.historia p,
+.valores p {
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.valores {
+    padding: 0 30px;
+}
