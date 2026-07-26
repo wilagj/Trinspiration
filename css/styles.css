@@ -1,3 +1,8 @@
+:root {
+    --rojointenso: #9F0712;
+    --negro: #0D0D0D;
+    --blanco: #FAFAFA;
+}
 * {
     margin: 0;
     padding: 0;
@@ -13,21 +18,21 @@ body {
 body {
     min-height: 100vh;
     font-family: Themysion, cursive;
-    background-color: #FAFAFA;
+    background-color:var(--rojointenso);
 }
 
 .pagina {
     width: 100%;
     min-height: 100vh;
 
-    background-color: #FAFAFA;
+    background-color:var(--blanco);
 
     display: flex;
     flex-direction: column;
 }
 
 .navegacion {
-    border-bottom: 2px solid #0D0D0D;
+    border-bottom: 2px solid var(--negro);
 }
 
 .navegacion ul {
@@ -43,7 +48,7 @@ body {
 }
 
 .navegacion a {
-    color: #9F0712;
+    color: var(--rojointenso);
     font-size: 22px;
     font-weight: bold;
     text-decoration: none;
@@ -61,7 +66,7 @@ main {
     min-height: 55vh;
     padding: 60px 20px;
     text-align: center;
-    color: #FAFAFA;
+    color: var(--blanco);
 
     display: flex;
     flex-direction: column;
@@ -94,15 +99,15 @@ main {
     width: calc(100% - 46px);
     margin: 0 auto;
     padding: 8px 0 28px;
-    border-top: 2px solid #0D0D0D;
+    border-top: 2px solid var(--negro);
 }
 
 .acceso {
     min-height: 54px;
     padding: 8px 4px;
-    color: #111111;
+    color: var(--negro);
     text-decoration: none;
-    border-bottom: 2px solid #0D0D0D;
+    border-bottom: 2px solid var(--negro);
 
     display: flex;
     align-items: center;
@@ -114,9 +119,9 @@ main {
     height: 37px;
     flex-shrink: 0;
 
-    border: 2px solid #9F0712;
+    border: 2px solid var(--rojointenso);
     border-radius: 2px;
-    background-color: #FAFAFA;
+    background-color:var(--blanco);
     font-size: 20px;
 
     display: flex;
@@ -135,14 +140,14 @@ main {
 }
 
 .acceso:hover {
-    background-color: #FAFAFA;
+    background-color: var(--blanco);
 }
 
 .pie-pagina {
     min-height: 52px;
     padding: 12px 18px;
-    background-color: #FAFAFA;
-    border-top: 2px solid #0D0D0D;
+    background-color: var(--blanco);
+    border-top: 2px solid var(--negro);
 
     display: flex;
     justify-content: space-between;
@@ -161,7 +166,7 @@ main {
 }
 
 .redes-sociales a {
-    color: #0D0D0D;
+    color: var(--negro);
     font-size: 19px;
     text-decoration: none;
 }
@@ -215,7 +220,7 @@ main {
     max-width: 500px;
     margin: 0 auto;
     padding: 25px;
-    background-color: #FAFAFA;
+    background-color: var(--blanco);
     border-radius: 12px;
 }
 
@@ -241,7 +246,7 @@ main {
     padding: 12px;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 17px;
-    border: 2px solid #0D0D0D;
+    border: 2px solid var(--negro);
     border-radius: 7px;
     outline: none;
 }
@@ -252,7 +257,7 @@ main {
 
 .campo input:focus,
 .campo textarea:focus {
-    border-color: #9F0712;
+    border-color: var(--rojointenso);
 }
 
 .formulario-contacto button {
@@ -261,15 +266,15 @@ main {
     padding: 11px 28px;
     font-size: 17px;
     font-weight: bold;
-    color: #ffffff;
-    background-color: #9F0712;
+    color: var(--blanco);
+    background-color: var(--rojointenso);
     border: none;
     border-radius: 7px;
     cursor: pointer;
 }
 
 .formulario-contacto button:hover {
-    background-color: #9F0712;
+    background-color: var(--rojointenso);
 }
 
 .datos-contacto {
@@ -298,8 +303,8 @@ main {
 .mapa-contacto {
     width: 220px;
     min-height: 160px;
-    background-color: #FAFAFA;
-    border: 2px solid #555555;
+    background-color: var(--blanco);
+    border: 2px solid var(--negro);
     border-radius: 8px;
 
     display: flex;
@@ -330,8 +335,8 @@ main {
 .iconos-redes a {
     width: 48px;
     height: 48px;
-    color: #FAFAFA;
-    background-color: #9F0712;
+    color: var(--blanco);
+    background-color: var(--rojointenso);
     border-radius: 9px;
     font-size: 27px;
     text-decoration: none;
@@ -343,12 +348,12 @@ main {
 
 .iconos-redes a:hover {
     transform: scale(1.1);
-    background-color: #9F0712;
+    background-color: var(--rojointenso);
 }
 
 .navegacion a.activo {
     padding-bottom: 8px;
-    border-bottom: 4px solid #0D0D0D;
+    border-bottom: 4px solid var(--negro);
 }
 .contenido-quienes {
         background-image:
